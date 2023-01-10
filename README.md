@@ -19,7 +19,7 @@ This is an instruction document for HMM-spikingdata toolbox. This toolbox contai
     
     src/mHMM/ contains functions for Multinoulli-HMM.
     
-    src/basic_functions/ contains other functions used in the demo, including plotting. AIC.m and BIC.m are provided here. They are not used in demo, but can be used for model selection.
+    src/utils/ contains other functions used in the demo, including plotting. AIC.m and BIC.m are provided here. They are not used in demo, but can be used for model selection.
 
     data/ contains the example data that is used in the demo.
     
