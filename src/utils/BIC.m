@@ -14,7 +14,7 @@ function [bic] = BIC(m,N,Nbin,ntrial,LL,HMMtype)
 
 LL = real(LL);
 if strcmp(HMMtype,'pHMM')
-    bic = -2*LL+(m*(m-1)+m*N)*log(ntrial*N*Nbin);
+    bic = -2*LL+(m*(m-1)+m*N)*log(ntrial*Nbin);
 elseif strcmp(HMMtype,'bHMM')
     bic = -2*LL+(m*(m-1)+m*N)*log(ntrial*Nbin);
 end
