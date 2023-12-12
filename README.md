@@ -6,7 +6,7 @@
 
 # Notes for HMM toolbox
 
-This is an instruction document for HMM-spikingdata toolbox. This toolbox contains the source code used in paper: Hidden Markov Modeling of ensembles of spike trains.
+This is an instruction document for the HMM-spikingdata toolbox. This toolbox contains the source code used in the article: Hidden Markov Modeling of spike data.
 
 
 ## Folders and files
