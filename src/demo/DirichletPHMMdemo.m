@@ -60,7 +60,7 @@ datafilename = datafilename{end}; % name of data file
 load(datadir);
 % data=data(1:10); % select only first 10 trials
 
-%% ===========    Seperate training set and validation set    =============
+%% ===========    Separate training set and validation set    =============
 % 1. You can change the percentage/number of trials for training set (and
 %    validation set) by changing 'ptrain'/'ntrain'.
 % 2. You can set the protocol of selecting trials for training set (and
