@@ -28,4 +28,4 @@ This is an instruction document for the HMM-spikingdata toolbox. This toolbox co
     
     Detailed instructions are in demo files.
     
-    PHMM does not require the length of each trial to be the same. The demo uses the data with trials having the same length just for simplicity. If one wants to apply the toolbox to trials with different lengths, please use ./src/basic_functions/plotpHMMtrials_varT.m instead of ./src/basic_functions/plotpHMMtrials.m to plot the decoding of all trials in one figure.
+    PHMM does not require the length of each trial to be the same. The demo uses the data with trials having the same length just for simplicity. If one wants to apply the toolbox to trials with different lengths, please use ./src/utils/plotpHMMtrials_varT.m instead of ./src/utils/plotpHMMtrials.m to plot the decoding of all trials in one figure.
