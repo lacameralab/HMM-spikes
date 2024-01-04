@@ -33,9 +33,9 @@ T. Li and G. La Camera, *Hidden Markov Modeling of spike data*, 2024
 
 ## Comments:
     
-    Detailed instructions are in demo files.
+    - Detailed instructions are in demo files.
     
-    PHMM does not require the length of each trial to be the same. 
+    - PHMM does not require the length of each trial to be the same. 
     The demo uses the data with trials having the same length just for simplicity. 
     If one wants to apply the toolbox to trials with different lengths, please use 
     ./src/utils/plotpHMMtrials_varT.m instead of ./src/utils/plotpHMMtrials.m to plot the decoding of all trials in one figure.
