@@ -6,14 +6,19 @@
 
 # Notes for HMM toolbox
 
-This is an instruction document for the HMM-spikingdata toolbox. This toolbox contains the source code used in the article: Hidden Markov Modeling of spike data.
+The HMM-spikingdata toolbox contains the source code used in the article: 
+T. Li and G. La Camera, "Hidden Markov Modeling of spike data".
 
 
 ## Folders and files
 
     src/ contains all the source code.
 
-    src/demo/ contains four demos: standard Poisson HMM (standardPHMMdemo.m), sticky-Poisson HMM (stickypHMMdemo.m), Poisson HMM with Dirichlet prior (DPHMM, DirichletPHMMdemo.m), Multinoulli HMM (mHMMdemo.m). The demos showed an HMM procedure of a dataset generated from a clustered spiking network, including generating initial parameters, training and decoding. One can apply the algorithms to other datasets by changing the directory of data and parameters according to the instructions.
+    src/demo/ contains four demos: standard Poisson HMM (standardPHMMdemo.m), sticky-Poisson HMM (stickypHMMdemo.m), 
+    Poisson HMM with Dirichlet prior (DPHMM, DirichletPHMMdemo.m), Multinoulli HMM (mHMMdemo.m). 
+    The demos showed an HMM procedure of a dataset generated from a clustered spiking network, 
+    including generating initial parameters, training and decoding. One can apply the algorithms to other datasets 
+    by changing the directory of data and parameters according to the instructions.
     
     src/pHMM/ contains functions for Poisson HMM.
     
