@@ -6,7 +6,8 @@
 
 # Notes for HMM toolbox
 
-The HMM-spikingdata toolbox contains the source code used in the article:
+The HMM-spikingdata toolbox contains MATLAB source code to train and decode several HMM algorithms to spike data. 
+Full details about the algorithms are in the article:
 
 T. Li and G. La Camera, *Hidden Markov Modeling of spike data*, 2024
 
@@ -28,7 +29,7 @@ T. Li and G. La Camera, *Hidden Markov Modeling of spike data*, 2024
     - src/utils/ contains other functions used in the demo, including functions used for plotting. 
     AIC.m and BIC.m are provided in this folder. They are not used in demo, but are needed for model selection.
 
-    - data/ contains the example data used in the demo.
+    - data/ contains the example data used in the demos.
     
 
 ## Comments:
