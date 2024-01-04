@@ -19,13 +19,17 @@ This is an instruction document for the HMM-spikingdata toolbox. This toolbox co
     
     src/mHMM/ contains functions for Multinoulli-HMM.
     
-    src/utils/ contains other functions used in the demo, including plotting. AIC.m and BIC.m are provided here. They are not used in demo, but can be used for model selection.
+    src/utils/ contains other functions used in the demo, including functions used for plotting. 
+    AIC.m and BIC.m are provided in this folder. They are not used in demo, but are needed for model selection.
 
-    data/ contains the example data that is used in the demo.
+    data/ contains the example data used in the demo.
     
 
 ## Comments:
     
     Detailed instructions are in demo files.
     
-    PHMM does not require the length of each trial to be the same. The demo uses the data with trials having the same length just for simplicity. If one wants to apply the toolbox to trials with different lengths, please use ./src/utils/plotpHMMtrials_varT.m instead of ./src/utils/plotpHMMtrials.m to plot the decoding of all trials in one figure.
+    PHMM does not require the length of each trial to be the same. 
+    The demo uses the data with trials having the same length just for simplicity. 
+    If one wants to apply the toolbox to trials with different lengths, please use 
+    ./src/utils/plotpHMMtrials_varT.m instead of ./src/utils/plotpHMMtrials.m to plot the decoding of all trials in one figure.
