@@ -7,6 +7,7 @@
 # Notes for HMM toolbox
 
 The HMM-spikingdata toolbox contains the source code used in the article:
+
 *T. Li and G. La Camera, "Hidden Markov Modeling of spike data"*
 
 
