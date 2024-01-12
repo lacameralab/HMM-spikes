@@ -12,7 +12,7 @@ Full details about the algorithms are in the article:
 T. Li and G. La Camera, *Hidden Markov Modeling of spike data*, 2024
 
 
-## Folders and files
+# Folders and files
 
     - src/ contains all the source code.
 
