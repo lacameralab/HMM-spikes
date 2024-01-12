@@ -32,7 +32,7 @@ T. Li and G. La Camera, *Hidden Markov Modeling of spike data*, 2024
     - data/ contains the example data used in the demos.
     
 
-## Comments:
+## Comments
     
     - Detailed instructions are in the header of the demo files.
     
