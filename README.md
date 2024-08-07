@@ -5,7 +5,7 @@ Author: Tianshu Li
 The HMM-spikingdata toolbox contains MATLAB source code to train and decode several HMM algorithms to spike data. 
 Full details about the algorithms are in the article:
 
-T. Li and G. La Camera, *Hidden Markov Modeling of spike data*, 2024
+T. Li and G. La Camera, *A sticky Poisson Hidden Markov Model for spike data*, bioRxiv 2024
 
 
 ## Folders and files
