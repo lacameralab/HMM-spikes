@@ -1,7 +1,7 @@
 % This file is a demo for applying sticky Poisson-HMM to spiking data.
 % 
 % NOTICE:
-% The unit of time is SECOND throughout the script. Please change the unit
+% The unit of time is SECONDS throughout the script. Please change the unit
 % of time in your data to second before running this script!
 % 
 % Author: Tianshu Li
