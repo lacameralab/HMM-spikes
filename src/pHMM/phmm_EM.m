@@ -1,5 +1,7 @@
 function [lambda,Gamma,isconverge,deltas,logliks,rec,iter,crit,llk,AIC,BIC] = phmm_EM(xs,m,lambda,Gamma,thresh,maxiter,tol)
 % [lambda,Gamma,isconverge,deltas,logliks,rec,iter,crit,llk,AIC,BIC] = phmm_EM(xs,m,lambda,Gamma,thresh,maxiter,tol)
+% Sticky Poisson HMM of spike data (set 'thresh' to zero for a 'standard' Poisson-HMM).
+%
 % Inputs:
 %   xs: observation vector, if there are several trials, put them in a
 %       cell.
@@ -26,7 +28,7 @@ function [lambda,Gamma,isconverge,deltas,logliks,rec,iter,crit,llk,AIC,BIC] = ph
 %   AIC: a scalar, Akaike information criterion
 %   BIC: a scalar, Bayesian information criterion
 % 
-% Tianshu Li - edited from the R code in Zucchini's book A.2.3.
+% Tianshu Li - inspired by the R code in Zucchini's book A.2.3.
 
 if nargin < 7
     tol = 1e-4; % tolerence
