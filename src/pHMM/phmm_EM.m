@@ -7,7 +7,7 @@ function [lambda,Gamma,isconverge,deltas,logliks,rec,iter,crit,llk,AIC,BIC] = ph
 %   lambda: firing rate (parameter of Poisson distribution) in each state
 %   Gamma: transition probability matrix (Gamma(i,j)=P(State_i-->State_j))
 %   thresh: threshold of the self-transition probability (diagonal of
-%       Gamma).
+%       Gamma). Set thresh to zero for a 'standard' Poisson-HMM
 %   maxiter: maxiteration number. Default: 1000
 %   tol: tolerence. Default: 1e-6
 % Outputs:
