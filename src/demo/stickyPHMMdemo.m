@@ -31,7 +31,7 @@ setcol(1:8,:) = ...
 ischecking = 0; % if 1, enables code checking warnings
 
 if ischecking
-    prompt = '======\nThe unit of time is SECOND though out the script. \nIs every time unit in your data AND the script (after your edit) SECOND? \n(type ''yes''/''no'')\n';
+    prompt = '======\nThe unit of time is SECONDS though out the script. \nIs every time unit in your data AND the script (after your edit) SECOND? \n(type ''yes''/''no'')\n';
     istimeunitcorrect = input(prompt);
     if strcmpi(istimeunitcorrect,'no')
         error('Please change the units of time in your data AND the script (after your edit) to SECONDS before running this script!');
