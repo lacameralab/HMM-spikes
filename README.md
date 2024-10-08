@@ -7,6 +7,7 @@ Full details about the algorithms are in the article:
 
 T. Li and G. La Camera, *A sticky Poisson Hidden Markov Model for spike data*, bioRxiv 2024
 
+MATLAB version: MATLAB 2023a
 
 ## Folders and files
 
