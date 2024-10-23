@@ -7,7 +7,7 @@
 % Author: Tianshu Li
 % Date: 9/21/2021
 
-rng(3456); % for reproducibility, remove it to get different initial conditions
+% rng(3456); % for reproducibility, remove it to get different initial conditions
 
 clear;
 addpath '../utils';
