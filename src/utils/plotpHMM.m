@@ -102,15 +102,6 @@ hold all;
 
 nState = size(pstates);
 
-col2 = [];
-yyaxis right;
-for i = 1:nState
-    h = plot(starttime+timev*dt,pstates(i,:),'-','color',setcol(i,:),'linewidth',3);
-    col2 = [col2; get(h,'Color')];
-end
-
-figset(gca,'time (sec)','Probability in each state',fntsz);
-
 yyaxis left;
 [maxP, indMax]=max(pstates);
 ind=find(maxP>0.8); % keep only states inferred with high prob.
@@ -127,7 +118,7 @@ for i=2:length(transtimeind)
         s = indMax(transtimeind(i)-1); % current state
         inBetween = [(N+1)*[pstates(s,x1)>0.8], fliplr(0*x1)]; % colored areas are rectangles covering the time bins in that state
         if ~isempty(x2)
-            patch(timev_ori(x2), inBetween', col2(s,:),'FaceAlpha',0.5,'EdgeColor','none');
+            patch(timev_ori(x2), inBetween', setcol(s,:),'FaceAlpha',0.5,'EdgeColor','none');
         end
     end
 end
@@ -146,5 +137,14 @@ title(sprintf('PHMM (dt = %g ms)',dt*1000));
 ax = gca;
 ax.YAxis(1).Color = 'k';
 ax.YAxis(2).Color = 'k';
+
+col2 = [];
+yyaxis right;
+for i = 1:nState
+    h = plot(starttime+timev*dt,pstates(i,:),'-','color',setcol(i,:),'linewidth',3);
+    col2 = [col2; get(h,'Color')];
+end
+
+figset(gca,'time (sec)','Probability in each state',fntsz);
 
 end
