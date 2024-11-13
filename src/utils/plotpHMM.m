@@ -138,8 +138,10 @@ ax = gca;
 ax.YAxis(1).Color = 'k';
 ax.YAxis(2).Color = 'k';
 
+% plot the state probabilities
 col2 = [];
-yyaxis right;
+yyaxis right; hold on;
+ylim([0,1]);
 for i = 1:nState
     h = plot(starttime+timev*dt,pstates(i,:),'-','color',setcol(i,:),'linewidth',3);
     col2 = [col2; get(h,'Color')];
