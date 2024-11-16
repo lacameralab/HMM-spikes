@@ -135,7 +135,7 @@ for iter = 1:maxiter
     end
     indL = find(lambda_next==0);
     if 1 && ~isempty(indL)
-        lambda_next(indL) = 0.001;
+        lambda_next(indL) = 0.001;  % prevent underflow when calculating lP_xt (log(lambda))
     end
     if 1 && isempty(indG)
         latestgoodGamma = Gamma_next;
