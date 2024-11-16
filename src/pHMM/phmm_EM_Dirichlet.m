@@ -123,7 +123,11 @@ for iter = 1:maxiter
     end
     Gamma_next = Gamma_next./sum(Gamma_next,2);
     lambda_next = lambda_next./lambdascale;
-    
+
+    indL = find(lambda_next==0);
+    if 1 && ~isempty(indL)
+        lambda_next(indL) = 0.001;  % prevent underflow when calculating lP_xt (log(lambda))
+    end
         
     % record the update of diagonal of transition matrix
     rec.Gamma_diag(:,l) = diag(Gamma_next);
